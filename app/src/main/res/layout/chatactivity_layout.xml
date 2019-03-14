@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 聊天界面布局 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--顶部标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#393a3f">
+
+        <ImageView
+            android:id="@+id/fallback_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/chat_title_textview1"/>
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="25dp"
+            android:background="#2e2e32"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"/>
+        
+        <ImageView
+            android:id="@+id/title_image3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="250dp"
+            android:src="@drawable/chat_title_textview2"
+            />
+
+</LinearLayout>
+
+    <!--聊天列表-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <!--聊天底部栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#f4f4f4">
+
+        <ImageView
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerInside"
+        android:src="@drawable/chat_buttom1"
+        android:layout_marginLeft="7dp"/>
+
+        <!--输入框-->
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/chat_buttom2"
+            android:layout_gravity="center_vertical"
+            />
+
+        <!--发送控件-->
+        <ImageView
+            android:id="@+id/send"
+            android:layout_marginLeft="15dp"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/chat_buttom3"
+            android:layout_gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

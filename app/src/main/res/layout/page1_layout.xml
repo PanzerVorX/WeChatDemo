@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ViewPager的页卡1，即微信消息提示界面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!--消息提示列表布局-->
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/wechat_recyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

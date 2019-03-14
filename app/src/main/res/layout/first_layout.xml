@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--微信消息提示界面布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--顶部标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#393a3f">
+
+        <TextView
+            android:id="@+id/title_textview1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="微信"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/title_image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="175dp"
+            android:src="@drawable/title_textview2"/>
+
+        <ImageView
+            android:id="@+id/title_image3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/title_textview3"
+            />
+
+    </LinearLayout>
+
+    <!--ViewPagr-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+    </android.support.v4.view.ViewPager>
+
+    <!--边界线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c3ccd5"/>
+
+    <!--底部选项布局（4个控件）-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="#fcfcfc"
+        android:layout_weight="2.2"
+        >
+
+        <ImageView
+            android:id="@+id/buttom_image1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/buttom1"
+            />
+        <ImageView
+            android:id="@+id/buttom_image2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/buttom2"
+            />
+        <ImageView
+            android:id="@+id/buttom_image3"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/buttom3"
+            />
+        <ImageView
+            android:id="@+id/buttom_image4"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/buttom4"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
